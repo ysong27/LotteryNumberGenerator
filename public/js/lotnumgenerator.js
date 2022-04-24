@@ -24,8 +24,16 @@ $(document).ready(function () {
         return pickedNumbers;
     }
 
+
     $("button").on("click", function () {
         var lotNums = Object.keys(pickNumbers());
-        $("#lotteryNumbers").text(lotNums);
+        var lotNumsDisplayHtml = "";
+        for (var num of lotNums) {
+            lotNumsDisplayHtml += `<div class="lotteryNumber">${num}</div>`;
+        }
+        $("#lotteryNumbersDiv").html(lotNumsDisplayHtml);
     });
+
+
+
 });

@@ -6,18 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="/public/css/style.css">
 </head>
 
 <body>
-    <p>Lot Number Generator</p>
-    <button>Draw</button>
-    <p id="lotteryNumbers"></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Lottery Number Generator</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-primary" id="drawButton">Draw</button>
+            </div>
+        </div>
+        <div class="row" id="lotteryNumbersContainer">
+            <div class="col-12">
+                <div id="lotteryNumbersDiv"></div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/public/js/lotnumgenerator.js"></script>
-
 </body>
 
 </html>

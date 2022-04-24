@@ -1,0 +1,44 @@
+h1 {
+    font-weight: bold;
+}
+
+.row {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#drawButton {
+    width: 100%;
+    max-width: 550px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#lotteryNumbersDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 200px;
+    max-height: 500px;
+    min-width: 80px;
+    max-width: 550px;
+    border: solid #007bff 4px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.lotteryNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin: 5px;
+    background-color:#007bff;
+    color:white;
+}
