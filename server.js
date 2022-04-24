@@ -5,7 +5,7 @@ var path = require("path");
 
 function onHttpStart() {
     console.log('Express http server listening on: ' + HTTP_PORT);
-};
+}
 
 app.use('/public', express.static(__dirname + '/public'));
 
@@ -14,7 +14,7 @@ app.get('/', function(req, res) {
 });
 
 app.use(function(req, res) {
-    res.status(404).send("Page Not Found");
-  });
+  res.status(404).send("Page Not Found");
+});
 
 app.listen(HTTP_PORT, onHttpStart);
