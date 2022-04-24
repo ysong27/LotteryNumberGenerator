@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-    // max is inclusive (from 0 to max)
     function generateRandomIndex(max) {
         return Math.floor(Math.random() * max) + 1;
     }
@@ -25,11 +24,8 @@ $(document).ready(function () {
         return pickedNumbers;
     }
 
-
-    // start of code
     $("button").on("click", function () {
         var lotNums = Object.keys(pickNumbers());
-
         $("#lotteryNumbers").text(lotNums);
     });
 });
